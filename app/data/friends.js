@@ -1,6 +1,6 @@
-/*You should save your application's data inside of app/data/friends.js as an array of objects. Each of these objects should roughly follow the format below.
+/*You should save your application's data inside of app/data/friends.js as an array of objects. Each of these objects should roughly follow the format below. */
 
-
+let friendsArray = [
 {
   "name":"Ahmed",
   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -16,7 +16,28 @@
       4,
       1
     ]
-}*/
+},
+{
+    "name":"Viktor",
+    "photo": "picvic.jpg",
+    "scores": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        4,
+        3,
+        2,
+        5,
+        1
+    ]
+}
+
+
+
+
+];
 
 
 /*Determine the user's most compatible friend using the following as a guide:
