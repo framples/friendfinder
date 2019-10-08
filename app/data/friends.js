@@ -2,35 +2,99 @@
 
 let friendsArray = [
 {
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "name":"Draven",
+  "photo":"https://vignette.wikia.nocookie.net/leagueoflegends/images/6/63/Draven_OriginalCentered.jpg/revision/latest/scale-to-width-down/1215?cb=20180414202029",
   "scores":[
-      5,
+      3,
+      4,
       1,
       4,
-      4,
+      1,
+      5,
+      5,
       5,
       1,
-      2,
-      5,
-      4,
-      1
+      4
     ]
 },
 {
-    "name":"Viktor",
-    "photo": "picvic.jpg",
+    "name":"Cho'gath",
+    "photo": "https://cdna.artstation.com/p/assets/images/images/001/455/142/large/sixmorevodka-studio-smv-league-of-legends-chogath-seventhpass.jpg?1446721395",
     "scores": [
         3,
         2,
         2,
-        2,
+        4,
+        5,
         2,
         4,
+        1,
         3,
+        4
+    ]
+},
+{
+    "name":"Yasuo",
+    "photo": "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cd/Yasuo_OriginalCentered.jpg/revision/latest/scale-to-width-down/1215?cb=20180414203759",
+    "scores": [
+        5,
+        5,
+        1,
+        4,
+        1,
+        3,
+        5,
+        5,
+        2,
+        5
+    ]
+},
+{
+    "name":"Bard",
+    "photo": "https://vignette.wikia.nocookie.net/leagueoflegends/images/4/40/Bard_OriginalCentered.jpg/revision/latest/scale-to-width-down/1215?cb=20180414201951",
+    "scores": [
+        1,
+        3,
+        5,
+        2,
+        1,
+        5,
+        2,
         2,
         5,
         1
+    ]
+},
+{
+    "name":"Lux",
+    "photo": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
+    "scores": [
+        3,
+        2,
+        5,
+        4,
+        4,
+        2,
+        2,
+        3,
+        5,
+        3
+    ]
+},
+{
+    "name":"Pyke",
+    "photo": "https://vignette.wikia.nocookie.net/leagueoflegends/images/1/1b/Pyke_OriginalSkin.jpg/revision/latest?cb=20181021052139",
+    "scores": [
+        4,
+        3,
+        4,
+        3,
+        1,
+        4,
+        5,
+        1,
+        1,
+        2
     ]
 }
 

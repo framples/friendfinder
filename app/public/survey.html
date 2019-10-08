@@ -1,4 +1,237 @@
-Your htmlRoutes.js file should include two routes:
+<!DOCTYPE html>
+<html lang="en-us">
 
-A GET Route to /survey which should display the survey page.
-A default, catch-all route that leads to home.html which displays the home page.
+<head>
+    <meta charset="UTF-8">
+    <title>Pick-n-Ban</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.8em;
+            border-bottom: 1px solid #9c3039;
+            padding-bottom: 1em;
+        }
+
+        lable {
+            font-size: 1.5em;
+        }
+
+        .form-style {
+            border-bottom: 1px solid #9c3039;
+            padding-bottom: 1em;
+        }
+
+        .survey-style {
+            padding: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color: white;">
+        <nav class="navbar navbar-light">
+            <h1 class="display-4"><i class="fas fa-user-friends" style="color: #9c3039;"></i> Pick-n-Ban</h1>
+        </nav>
+        <section>
+            <form id="form-data">
+
+                <div class="form-style">
+                    <lable>Your Name (required)</lable>
+                    <input id="name" name="name" type="text" class="form-control">
+                    </br>
+                    <label>Link to a picture of yourself (required)</label>
+                    <input id="image" name="image" type="text" class="form-control">
+                </div>
+
+                <div class="survey-style">
+                    <h4><strong>Question 1</strong></h4>
+                    <h5>I get angry easily.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 2</strong></h4>
+                    <h5>I deserve to be in Diamond but others hold me back.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 3</strong></h4>
+                    <h5>I like helping others.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 4</strong></h4>
+                    <h5>I live for the late-game.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 5</strong></h4>
+                    <h5>Being an unstoppable force is the only way to play.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 6</strong></h4>
+                    <h5>I love the challenge of a difficult game mechanics.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 7</strong></h4>
+                    <h5>The only reason I'll win this game is because I put the team on my back.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 8</strong></h4>
+                    <h5>I don't care about winning - I'm all about styling on opponents.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 9</strong></h4>
+                    <h5>Magic is a way cooler form of damage than physical (axes/swords/maces)</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h4><strong>Question 10</strong></h4>
+                    <h5>I'm a terrible person.</h5>
+                    <select class="score-data" name="scores">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                </div>
+                <div style = "padding: 1em 2em 0;">
+                <buttom type ="submit" id ="form-sub" class ="btn btn-primary btn-lg btn-block"
+                style = "background-color: #9c3039">Submit</i></buttom>
+            </div>
+            </form>
+            <div class="container" style="padding-bottom: 3em;">
+                    <nav class="nav">
+                        <a class="nav-link" style="width: 250px;" href="/api/friends">API Champions List</a><span> | </span>
+                        <a class="nav-link" style="width: 250px;" href="https://github.com/framples33/friendfinder">
+                            GitHub Repository</a>
+                    </nav>
+                </div>
+        </section>
+
+    </div>
+    <div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">You should play: </h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="result-name"></h3>
+                    <img id="result-img">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $("#form-sub").on("click", (e) => {
+        e.preventDefault();
+        function validate() {
+            var valid = true;
+            $(".form-control").each(function () {
+                if ($(this).val() === "") {
+                    valid = false;
+                }
+            });
+            $(".score-data").each(function () {
+                if ($(this).val() === "") {
+                    valid = false;
+                }
+            });
+            return valid;
+        }
+        if (validate() === true) {
+            $.post("/api/champions", $("#form-data").serialize(), (data) => {
+                console.log(`i am ${data.name}`);
+                $("#result-name").text(data.name);
+                $("#result-img").attr("src", data.photo);
+                $("#results").modal("toggle");
+            });
+        } else {
+            alert("You missed a spot! Answer all the questions.");
+        }
+    });
+</script>
+
+</html>
